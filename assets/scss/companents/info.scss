@@ -1,0 +1,88 @@
+.info{
+    padding: 230px 0;
+    &-swiper{
+        display: flex;
+    }
+}
+.swiper{
+    width: 100%;
+    &-body{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+    }
+    &-slide{
+        margin: 0 15px 0 15px;
+    }
+    &-title{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 51px;
+        text-align: center;
+        color: $darkCerulean;
+        max-width: 690px;
+        margin: 0 auto;
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 35px;
+        text-align: center;
+        margin-top: 16px;
+        color: $darkCerulean;
+    }
+    &-next{
+        transform: rotate(0.5turn);
+    }
+}
+.swiper-body .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+.swiper-body .slick-arrow.slick-prev{
+    left: 0;
+    font-size: 0;
+    border: none;
+    background: url(../img/info/prev.svg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.swiper-body .slick-arrow.slick-next{
+    right: 0;
+    font-size: 0;
+    border: none;
+    background: url(../img/info/prev.svg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    transform: rotate(0.5turn);
+    cursor: pointer;
+}
+@media(max-width:992px){
+    .info{
+        padding: 90px 0;
+    }
+}
+@media(max-width:520px){
+    .swiper{
+        &-title{
+            font-size: 18px;
+        }
+        &-text{
+            font-size: 13px;
+        }
+        .swiper-body .slick-arrow.slick-prev {
+            width: 15px;
+            height: 20px;
+        }
+        .swiper-body .slick-arrow.slick-next {
+            width: 15px;
+            height: 20px;
+        }
+    }
+}

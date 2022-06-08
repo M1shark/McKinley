@@ -1,0 +1,70 @@
+.practice {
+    padding: 155px 0;
+    &-header {
+        max-width: 605px;
+    }
+    &-title {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 53px;
+        color: $darkCerulean;
+        margin-bottom: 25px;
+    }
+    &-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 42px;
+        color: $darkCerulean;
+        margin-bottom: 50px;
+    }
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &-card {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 257px;
+        background: #fff;
+        border: 1px solid #E4ECF0;
+        box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
+        border-radius: 2px;
+        padding: 44px 33px;
+        &__img {
+            margin-bottom: 40px;
+            max-width: 61px;
+        }
+        &__title {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            color: $darkCerulean;
+            margin-bottom: 12px;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: $darkCerulean;
+            margin-bottom: 35px;
+            flex: 1 1 auto;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .practice {
+        &-row {
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 520px) {
+    .practice {
+        &-card {
+            padding: 35px 20px;
+        }
+    }
+}
